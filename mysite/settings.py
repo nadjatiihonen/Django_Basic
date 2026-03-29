@@ -25,6 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.getenv('SECRET_KEY')
 
+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv('DEBUG') == 'True'
 
@@ -123,4 +124,12 @@ import os
 from dotenv import load_dotenv
 
 # З# Load environment variables from .env
+<<<<<<< HEAD
 load_dotenv()
+=======
+load_dotenv()
+
+# Replace strings with environment variables
+SECRET_KEY = os.getenv('SECRET_KEY')
+DEBUG = os.getenv('DEBUG') == 'True'
+>>>>>>> febd29b593f499f6f5908748af3ff2cffb1b937d
