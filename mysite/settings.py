@@ -132,4 +132,3 @@ load_dotenv()
 # Replace strings with environment variables
 SECRET_KEY = os.getenv('SECRET_KEY')
 DEBUG = os.getenv('DEBUG') == 'True'
->>>>>>> febd29b593f499f6f5908748af3ff2cffb1b937d
