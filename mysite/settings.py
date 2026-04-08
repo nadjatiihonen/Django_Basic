@@ -58,7 +58,7 @@ ROOT_URLCONF = "mysite.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": ['templates'],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -123,12 +123,3 @@ STATIC_URL = "static/"
 import os
 from dotenv import load_dotenv
 
-# З# Load environment variables from .env
-<<<<<<< HEAD
-load_dotenv()
-=======
-load_dotenv()
-
-# Replace strings with environment variables
-SECRET_KEY = os.getenv('SECRET_KEY')
-DEBUG = os.getenv('DEBUG') == 'True'
